@@ -15,7 +15,8 @@ public class MethodPractice {
 		return myName;
 	}
 
-	// 2. Write a method that take one number input and return the list of all even number
+	// 2. Write a method that take one number input and return the list of all
+	// even number
 
 	public static ArrayList<Integer> getEvenNumberList(int number) {
 		ArrayList<Integer> evenNumber = new ArrayList<Integer>();
@@ -52,6 +53,16 @@ public class MethodPractice {
 		return oddNumberList;
 	}
 
+	// Write a method that take input as mile & return as kilometer
+
+	public static double getKilometer(double number) {
+		double asKilometer = 0;
+
+		asKilometer = number * 1.6;
+
+		return asKilometer;
+	}
+
 	public static void main(String[] args) {
 
 		System.out.println("(Ans.-1.)" + getNewName("ibrahim"));
@@ -59,6 +70,7 @@ public class MethodPractice {
 		System.out.println("(Ans.-2.)" + getEvenNumberList(20));
 
 		System.out.println("(Ans.-3.)" + getOddNumberList(20));
+		System.out.println(getKilometer(3));
 
 	}
 
