@@ -1,4 +1,6 @@
 package day.one;
+
+
 public class MethodPractice {
 
 	// 6. Write a Method that take one String input and return same string in lower case.
