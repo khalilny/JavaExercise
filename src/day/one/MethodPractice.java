@@ -26,12 +26,28 @@ public class MethodPractice {
 
 		return allIndex;
 	}
+	
+	// 8. Write a method that take one String input and return a list of all character
+	
+	public static ArrayList<Character> getCharacterList(String text){
+		ArrayList<Character> allCharacter = new ArrayList<Character>();
+		
+		for(int i =0; i<text.length();i++){
+			
+			
+			allCharacter.add(text.charAt(i));
+		}
+		
+		return allCharacter;
+	}
+	
+	
 
 	public static void main(String[] args) {
 
 		System.out.println("(Ans.-5.)" + getStringUpperCase("This is a String"));
-		System.out.println(getIndex("This is a String"));
-
+		System.out.println("Ans.-7.)"+ getIndex("This is a String"));
+		System.out.println("Ans.-8.)"+ getCharacterList("This is a String"));
 	}
 
 }
