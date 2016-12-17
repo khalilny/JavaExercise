@@ -3,19 +3,19 @@ package day.one;
 
 public class MethodPractice {
 
-	// 6. Write a Method that take one String input and return same string in lower case.
+	// 5. Write a Method that take one String input and return same string in upper case.
 
-	public static String getStringLowerCase(String text) {
-		String lowerCase = null;
+	public static String getStringUpperCase(String text) {
+		String upperCase = null;
 
-		lowerCase = text.toLowerCase();
+		upperCase = text.toUpperCase();
 
-		return lowerCase;
+		return upperCase;
 	}
 
 	public static void main(String[] args) {
 
-		System.out.println("(Ans.-6.)" + getStringLowerCase("This is a String"));
+		System.out.println("(Ans.-5.)" + getStringUpperCase("This is a String"));
 
 	}
 
