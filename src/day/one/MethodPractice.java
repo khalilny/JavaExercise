@@ -1,6 +1,7 @@
 package day.one;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MethodPractice {
 
@@ -51,6 +52,16 @@ public class MethodPractice {
 		return squareTotal;
 	}
 	
+	// 11. Write a method taht take one number input and return an array that contain 0 to given number
+	
+	public static int[] getNumberArray(int number){
+		int[]numArray = new int[number+1];
+		for(int i=0; i<=number; i++){
+			numArray[i]=i;
+		}
+		return numArray;
+	}
+	
 	public static void main(String[] args) {
 
 		System.out.println("(Ans.-5.)" + getStringUpperCase("This is a String"));
@@ -58,6 +69,7 @@ public class MethodPractice {
 		System.out.println("Ans.-8.)" + getCharacterList("This is a String"));
 		System.out.println("Ans.-9.) " + getSum(20));
 		System.out.println("Ans.-10.) " + getSquareNumber(20));
+		System.out.println("Ans.-11.) " + Arrays.toString(getNumberArray(10)));
 	}
 
 }
