@@ -43,13 +43,21 @@ public class MethodPractice {
 		}
 		return total;
 	}
-
+//10 Write a method that take one number input and return square of the given number
+	
+	public static int getSquareNumber( int number){
+		int squareTotal = 0;
+		squareTotal = number*number;
+		return squareTotal;
+	}
+	
 	public static void main(String[] args) {
 
 		System.out.println("(Ans.-5.)" + getStringUpperCase("This is a String"));
 		System.out.println("Ans.-7.)" + getIndex("This is a String"));
 		System.out.println("Ans.-8.)" + getCharacterList("This is a String"));
 		System.out.println("Ans.-9.) " + getSum(20));
+		System.out.println("Ans.-10.) " + getSquareNumber(20));
 	}
 
 }
