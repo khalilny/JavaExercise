@@ -62,6 +62,16 @@ public class MethodPractice {
 		return numArray;
 	}
 	
+	//12. Write a method that take one number input and return a number list starting from 0 to that given number
+	
+	public static ArrayList<Integer> getNumberList(int number){
+		ArrayList<Integer>numberList = new ArrayList<Integer>();
+		for( int i= 0; i<=number; i++){
+			numberList.add(i);
+		}
+		return numberList;
+	}
+	
 	public static void main(String[] args) {
 
 		System.out.println("(Ans.-5.)" + getStringUpperCase("This is a String"));
@@ -70,6 +80,7 @@ public class MethodPractice {
 		System.out.println("Ans.-9.) " + getSum(20));
 		System.out.println("Ans.-10.) " + getSquareNumber(20));
 		System.out.println("Ans.-11.) " + Arrays.toString(getNumberArray(10)));
+		System.out.println("Ans.-12.) " + getNumberList(10));
 	}
 
 }
