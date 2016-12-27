@@ -1,14 +1,9 @@
 package day.one;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
-
 public class MethodPractice {
 
-	/**
-	 * 1. Write a method that take your name input and return your name.
+	/** 1. Write a method that take your name input and return your name.
 	 * Input/Parameter: string name return/output : String Serving
 	 * Bucket/container:variable
 	 */
@@ -20,8 +15,7 @@ public class MethodPractice {
 		return newName;
 	}
 
-	/**
-	 * 2. Write a method that take a number input and return the list of all
+	/** 2. Write a method that take a number input and return the list of all
 	 * even number from 0 to that given number. 
 	 * Input/ Parameter: int number
 	 * return/output type : ArrayList <Integer>
@@ -37,8 +31,7 @@ public class MethodPractice {
 		return evenNumberList;
 	}
 
-	/**
-	 * 3. Write a method that take a number input and return the list of all odd
+	/** 3. Write a method that take a number input and return the list of all odd
 	 * number from 0 to that given number
 	 * Input/ parameter int number
 	 * return/output type: ArrayList<Integer>
@@ -55,8 +48,7 @@ public class MethodPractice {
 		return oddNumber;
 	}
 
-	/**
-	 * 4.Write a method that take input as mile & return as kilometer.
+	/** 4.Write a method that take input as mile & return as kilometer.
 	 *  Input/ Parameter: double number
 	 *   return type:double
 	 *    serving Bucket/container:variable
@@ -77,7 +69,7 @@ public class MethodPractice {
 		return upperCase;
 	}
 
-	// Write a method that take one String input and return Same String in lower case.
+	// 6. Write a method that take one String input and return Same String in lower case.
 
 	public static String getStringLowerCase(String text) {
 		String lowerCase = null;
