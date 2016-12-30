@@ -155,9 +155,19 @@ public class MethodPractice {
 
 		return result;
 	}
+// 14.Write a method that take one number Array input and return the max number.
+	
+	public static int getMaxNumber(int[] numberArray){
+	int maximumNumber =0;
+		Arrays.sort(numberArray);
+		maximumNumber= numberArray[numberArray.length-1];
+		
+		return maximumNumber;
+	}
 
 	public static void main(String[] args) {
-
+		int[]numberArray = {10,12,15,38,20};
+		System.out.println("Ans.-14.) " + getMaxNumber(numberArray));
 		System.out.println("Ans.-13.) " + getName(20));
 		System.out.println("Ans.-12.) " + getNumberList(10));
 		System.out.println("Ans.-11.) " + Arrays.toString(getNumberArray(10)));
