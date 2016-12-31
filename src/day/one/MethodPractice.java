@@ -154,20 +154,70 @@ public class MethodPractice {
 		}
 
 		return result;
-	}
-// 14.Write a method that take one number Array input and return the max number.
-	
-	public static int getMaxNumber(int[] numberArray){
-	int maximumNumber =0;
-		Arrays.sort(numberArray);
-		maximumNumber= numberArray[numberArray.length-1];
-		
-		return maximumNumber;
-	}
 
+	}
+	// 14.1.Write a method that take one number Array input and return the max number.
+	
+		public static int getMaxNumber(int[] numberArray){
+		int maximumNumber =0;
+			Arrays.sort(numberArray);
+			maximumNumber= numberArray[numberArray.length-1];
+			
+			return maximumNumber;
+		}
+
+	// 14.2 write a method that take one number array input and return the max
+		// number.
+
+		public static int getMaxNumberTwo(int[] numArray1) {
+			int maxNumber = numArray1[0];
+			for (int i = 0; i < numArray1.length; i++) {
+				if (maxNumber < numArray1[i]) {
+					maxNumber = numArray1[i];
+				}
+			}
+
+			return maxNumber;
+		}
+	/**15.1 Write a method that take one number Array input and return the
+	  min number.
+	  *Input parameter : int []numAraay ReturnType : int serving
+	 * Bucket/container : variable
+	 */
+	public static int getMinNumber(int[] numArrayTwo) {
+		int minimumNumber = 0;
+		Arrays.sort(numArrayTwo);
+		minimumNumber = numArrayTwo[0];
+		return minimumNumber;
+
+	}
+	/**15.2. 15, Write a method that take one number Array input and return the
+	 * min number.
+	 * Input parameter : int []numAraay ReturnType : int serving
+	 * Bucket/container : variable
+	 */
+
+	public static int getMinNumber2(int[] numArray2) {
+		int minimumNumber = numArray2[0];
+		for (int i = 0; i < numArray2.length; i++) {
+			if (minimumNumber > numArray2[i]) {
+				minimumNumber = numArray2[i];
+			}
+		}
+
+		return minimumNumber;
+	}
+	
 	public static void main(String[] args) {
+		
+		int[] numArray2 = { 18, 40, -50, 70, 3 };
+		System.out.println("Ans.-15.2)" + getMinNumber2(numArray2));
+		int[] numArray = { 18, 40, -50, 70, 3 };
+		System.out.println("Ans.-15.1)" + getMinNumber(numArray));
+		int[] numArray1 = { 18, 17, 39, 38, 35 };
+		System.out.println("Ans.-14.2)" + getMaxNumberTwo(numArray1));
 		int[]numberArray = {10,12,15,38,20};
-		System.out.println("Ans.-14.) " + getMaxNumber(numberArray));
+		System.out.println("Ans.-14.1) " + getMaxNumber(numberArray));
 		System.out.println("Ans.-13.) " + getName(20));
 		System.out.println("Ans.-12.) " + getNumberList(10));
 		System.out.println("Ans.-11.) " + Arrays.toString(getNumberArray(10)));
