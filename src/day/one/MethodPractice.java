@@ -208,8 +208,23 @@ public class MethodPractice {
 		return minimumNumber;
 	}
 	
-	public static void main(String[] args) {
+	/** 16.Write a Method that take a number input and return the same value as a String
+	 * input/ parameter: int number
+	 * return type:String
+	 * Serving Bucket: 
+	 *
+	 */
+	
+	public static String getStringFromInteger(int number){
 		
+		String convertedNumber= null;
+		convertedNumber= String.valueOf(number);
+		
+		return convertedNumber;
+	};
+	
+	public static void main(String[] args) {
+		System.out.println("Ans.-16.)" + getStringFromInteger(20));
 		int[] numArray2 = { 18, 40, -50, 70, 3 };
 		System.out.println("Ans.-15.2)" + getMinNumber2(numArray2));
 		int[] numArray = { 18, 40, -50, 70, 3 };
