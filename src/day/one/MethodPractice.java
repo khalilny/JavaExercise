@@ -234,9 +234,26 @@ public class MethodPractice {
 		return rollNumber;
 	}
 	
+	/** 18, Write a method that take String input & return true if it contains
+	 * char 'a" otherwise return false.
+	 * input/ parameter:String text 
+	 * Return type :boolean 
+	 * serving bucket variable
+	 */
+	
+	public static boolean getDecision(String text){
+		boolean decision = false;
+		for(int i=0;i<text.length();i++){
+			if(text.charAt(i)=='a'|| text.charAt(i)=='A'){
+				decision = true;
+			}
+		}
+		
+		return decision;
+	}
 	
 	public static void main(String[] args) {
-		
+		System.out.println("Ans.-18.) "+getDecision("This is a String"));
 		System.out.println("Ans.-17.) "+getIntegerFromString("30"));
 		System.out.println("Ans.-16.) " + getStringFromInteger(20));
 		int[] numArray2 = { 18, 40, -50, 70, 3 };
