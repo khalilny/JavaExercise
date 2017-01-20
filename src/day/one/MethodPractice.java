@@ -212,19 +212,33 @@ public class MethodPractice {
 	 * input/ parameter: int number
 	 * return type:String
 	 * Serving Bucket: 
-	 *
 	 */
 	
 	public static String getStringFromInteger(int number){
-		
 		String convertedNumber= null;
 		convertedNumber= String.valueOf(number);
 		
 		return convertedNumber;
-	};
+	}
+	/**17. Write a method that take a string representation of number input and
+	 * return the same value as an integer.
+	 * Input/ parameter: String name
+	 * Return Type : int.
+	 * serving Bucket: Variable
+	 * 
+	 */
+	public static int getIntegerFromString(String name){
+		int rollNumber = 0;
+		rollNumber = Integer.valueOf(name);
+		
+		return rollNumber;
+	}
+	
 	
 	public static void main(String[] args) {
-		System.out.println("Ans.-16.)" + getStringFromInteger(20));
+		
+		System.out.println("Ans.-17.) "+getIntegerFromString("30"));
+		System.out.println("Ans.-16.) " + getStringFromInteger(20));
 		int[] numArray2 = { 18, 40, -50, 70, 3 };
 		System.out.println("Ans.-15.2)" + getMinNumber2(numArray2));
 		int[] numArray = { 18, 40, -50, 70, 3 };
