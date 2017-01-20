@@ -252,7 +252,22 @@ public class MethodPractice {
 		return decision;
 	}
 	
+	/**19.write a method that take a one String input and return the sum of all index. 
+	 * input/ parameter: String text 
+	 * Return type: int 
+	 * Serving bucket :Variable
+	 */
+	public static int getSumOfAllindex(String text){
+		int indexTotal=0;
+		for(int i=0; i<text.length();i++){
+			indexTotal= indexTotal+i;
+		}
+		
+		return indexTotal;
+	}
+	
 	public static void main(String[] args) {
+		System.out.println("Ans.-19.) "+getSumOfAllindex("This is a String"));
 		System.out.println("Ans.-18.) "+getDecision("This is a String"));
 		System.out.println("Ans.-17.) "+getIntegerFromString("30"));
 		System.out.println("Ans.-16.) " + getStringFromInteger(20));
