@@ -338,8 +338,21 @@ public class MethodPractice {
 		
 		return wordList;
 	}
+         /**24.1. Write a method that take one String input and return first word.
+		 *Input parameter: String text 
+		 *Return type :String 
+		 *Serving bucket: variable
+		 */
+	public static String getFirstWord(String text){
+		String word = "";
+		String[] wordArray = text.split(" ");
+		word = wordArray[0];
+		
+		return word;
+	}
 	
 	public static void main(String[] args) {
+		System.out.println("Ans.-24.1)"+ getFirstWord("This is a String"));
 		System.out.println("Ans.-23.) " + getWordList("This is a String"));
 		System.out.println("Ans.-22.) " + getFifthToTenth("This is a String"));
 		System.out.println("Ans.-21.) " + getFirstFiveCharacter("This is a String"));
