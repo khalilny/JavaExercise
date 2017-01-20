@@ -179,8 +179,7 @@ public class MethodPractice {
 
 			return maxNumber;
 		}
-	/**15.1 Write a method that take one number Array input and return the
-	  min number.
+	/**15.1 Write a method that take one number Array input and return the min number.
 	  *Input parameter : int []numAraay ReturnType : int serving
 	 * Bucket/container : variable
 	 */
@@ -191,8 +190,7 @@ public class MethodPractice {
 		return minimumNumber;
 
 	}
-	/**15.2. 15, Write a method that take one number Array input and return the
-	 * min number.
+	/**15.2. 15, Write a method that take one number Array input and return the min number.
 	 * Input parameter : int []numAraay ReturnType : int serving
 	 * Bucket/container : variable
 	 */
@@ -209,7 +207,7 @@ public class MethodPractice {
 	}
 	
 	/** 16.Write a Method that take a number input and return the same value as a String
-	 * input/ parameter: int number
+	 * Input/ parameter: int number
 	 * return type:String
 	 * Serving Bucket: 
 	 */
@@ -236,7 +234,7 @@ public class MethodPractice {
 	
 	/** 18, Write a method that take String input & return true if it contains
 	 * char 'a" otherwise return false.
-	 * input/ parameter:String text 
+	 * Input/ parameter:String text 
 	 * Return type :boolean 
 	 * serving bucket variable
 	 */
@@ -253,7 +251,7 @@ public class MethodPractice {
 	}
 	
 	/**19.write a method that take a one String input and return the sum of all index. 
-	 * input/ parameter: String text 
+	 * Input/ parameter: String text 
 	 * Return type: int 
 	 * Serving bucket :Variable
 	 */
@@ -266,7 +264,7 @@ public class MethodPractice {
 		return indexTotal;
 	}
 	/** 20, Write a method that take one string input and return a list of last five character. 
-	 * input/parameter: String name;
+	 * Input/parameter: String name;
 	 * Return type: Arraylist<Character>;
 	 * Serving bucket: list
 	 */
@@ -278,8 +276,22 @@ public class MethodPractice {
 		
 		return lastFiveCharacter;
 	}
+	/** 21.Write a method that take one String input and return a list first five character.
+	 *  Input/ Parameter  : String name 
+	 *  Return/output Type: ArrayList <Character> 
+	 *  Serving bucket    : List
+	 */
+	public static ArrayList<Character> getFirstFiveCharacter(String text){
+		ArrayList<Character> firstFiveCharacter = new ArrayList<Character>();
+		for(int i=0; i<5;i++){
+			firstFiveCharacter.add(text.charAt(i));
+		}
+		
+		return firstFiveCharacter;
+	}
 	
 	public static void main(String[] args) {
+		System.out.println(getFirstFiveCharacter("This is a String"));
 		System.out.println("Ans.-20.) "+getCharacterListLast("This is a String"));
 		System.out.println("Ans.-19.) "+getSumOfAllindex("This is a String"));
 		System.out.println("Ans.-18.) "+getDecision("This is a String"));
