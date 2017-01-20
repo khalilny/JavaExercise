@@ -324,8 +324,23 @@ public class MethodPractice {
 
 		return fifthToTenthCharacter;
 	}
-
+	/** 23.Write a method that take one String input and return a list of all words.
+	 *  Input/ parameter String text
+	 *  Return type: ArrayList<String>.
+	 *  Serving bucket: List
+	 */
+	public static ArrayList<String> getWordList(String text){
+		ArrayList<String> wordList = new ArrayList<String>();
+		String[] wordArray = text.split(" ");
+		for(int i=0; i<wordArray.length;i++){
+			wordList.add(wordArray[i]);
+		}
+		
+		return wordList;
+	}
+	
 	public static void main(String[] args) {
+		System.out.println("Ans.-23.) " + getWordList("This is a String"));
 		System.out.println("Ans.-22.) " + getFifthToTenth("This is a String"));
 		System.out.println("Ans.-21.) " + getFirstFiveCharacter("This is a String"));
 		System.out.println("Ans.-20.) " + getCharacterListLast("This is a String"));
@@ -340,7 +355,7 @@ public class MethodPractice {
 		int[] numArray1 = { 18, 17, 39, 38, 35 };
 		System.out.println("Ans.-14.2)" + getMaxNumberTwo(numArray1));
 		int[] numberArray = { 10, 12, 15, 38, 20 };
-		System.out.println("Ans.-14.1) " + getMaxNumber(numberArray));
+		System.out.println("Ans.-14.1)" + getMaxNumber(numberArray));
 		System.out.println("Ans.-13.) " + getName(20));
 		System.out.println("Ans.-12.) " + getNumberList(10));
 		System.out.println("Ans.-11.) " + Arrays.toString(getNumberArray(10)));
