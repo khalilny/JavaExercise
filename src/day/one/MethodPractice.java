@@ -265,8 +265,22 @@ public class MethodPractice {
 		
 		return indexTotal;
 	}
+	/** 20, Write a method that take one string input and return a list of last five character. 
+	 * input/parameter: String name;
+	 * Return type: Arraylist<Character>;
+	 * Serving bucket: list
+	 */
+	public static ArrayList<Character> getCharacterListLast(String text){
+		ArrayList<Character>lastFiveCharacter = new ArrayList<Character>();
+		for(int i=text.length()-5; i<text.length();i++){
+			lastFiveCharacter.add(text.charAt(i));
+		}
+		
+		return lastFiveCharacter;
+	}
 	
 	public static void main(String[] args) {
+		System.out.println("Ans.-20.) "+getCharacterListLast("This is a String"));
 		System.out.println("Ans.-19.) "+getSumOfAllindex("This is a String"));
 		System.out.println("Ans.-18.) "+getDecision("This is a String"));
 		System.out.println("Ans.-17.) "+getIntegerFromString("30"));
