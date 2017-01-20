@@ -364,9 +364,28 @@ public class MethodPractice {
 		
 		return lastWord;
 	}
+	/** 25.Write a method that take one String and one word input and return if
+	 * that sentence contain given word otherwise return false
+	 * Input/parameter: String text, String wordOne
+	 * Return Type: boolean 
+	 * Serving bucket: Variable
+	 */
+	
+	public static boolean getResult(String text, String word){
+		boolean result = false;
+		String[] wordArray = text.split(" ");
+		for(int i=0; i<wordArray.length;i++){
+			if(wordArray[i].equalsIgnoreCase(word)){
+				result = true;
+			}
+			
+		}
+		return result;
+	}
 	
 	public static void main(String[] args) {
-		System.out.println("Ans.-24.2) "+ getLastWord("This isa String"));
+		System.out.println("Ans.-25.) " + getResult("This is a String","is"));
+		System.out.println("Ans.-24.2) "+ getLastWord("This is a String"));
 		System.out.println("Ans.-24.1) "+ getFirstWord("This is a String"));
 		System.out.println("Ans.-23.) " + getWordList("This is a String"));
 		System.out.println("Ans.-22.) " + getFifthToTenth("This is a String"));
