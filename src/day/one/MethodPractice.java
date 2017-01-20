@@ -349,10 +349,25 @@ public class MethodPractice {
 		word = wordArray[0];
 		
 		return word;
+		
+	}
+	/**
+	 * 24.2. H.W. Write a method that take one String input and return last word.
+	 * Input/parameter: String text
+	 * Return type: ArrayList<String> 
+	 * Serving bucket: List
+	 */
+	public static String getLastWord(String text){
+		String lastWord = "";
+		String[] wordArray =text.split(" ");
+		lastWord = wordArray[wordArray.length-1];
+		
+		return lastWord;
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Ans.-24.1)"+ getFirstWord("This is a String"));
+		System.out.println("Ans.-24.2) "+ getLastWord("This isa String"));
+		System.out.println("Ans.-24.1) "+ getFirstWord("This is a String"));
 		System.out.println("Ans.-23.) " + getWordList("This is a String"));
 		System.out.println("Ans.-22.) " + getFifthToTenth("This is a String"));
 		System.out.println("Ans.-21.) " + getFirstFiveCharacter("This is a String"));
