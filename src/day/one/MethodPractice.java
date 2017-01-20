@@ -1,9 +1,12 @@
 package day.one;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+
 public class MethodPractice {
 
-	/** 1. Write a method that take your name input and return your name.
+	/**
+	 * 1. Write a method that take your name input and return your name.
 	 * Input/Parameter: string name return/output : String Serving
 	 * Bucket/container:variable
 	 */
@@ -15,11 +18,10 @@ public class MethodPractice {
 		return newName;
 	}
 
-	/** 2. Write a method that take a number input and return the list of all
-	 * even number from 0 to that given number. 
-	 * Input/ Parameter: int number
-	 * return/output type : ArrayList <Integer>
-	 *  Serving Bucket/container: List
+	/**
+	 * 2. Write a method that take a number input and return the list of all
+	 * even number from 0 to that given number. Input/ Parameter: int number
+	 * return/output type : ArrayList <Integer> Serving Bucket/container: List
 	 */
 
 	public static ArrayList<Integer> getEvenNumber(int number) {
@@ -31,11 +33,10 @@ public class MethodPractice {
 		return evenNumberList;
 	}
 
-	/** 3. Write a method that take a number input and return the list of all odd
-	 * number from 0 to that given number
-	 * Input/ parameter int number
-	 * return/output type: ArrayList<Integer>
-	 *  serving bucket/ container List.
+	/**
+	 * 3. Write a method that take a number input and return the list of all odd
+	 * number from 0 to that given number Input/ parameter int number
+	 * return/output type: ArrayList<Integer> serving bucket/ container List.
 	 */
 	public static ArrayList<Integer> getOddNumber(int number) {
 		ArrayList<Integer> oddNumber = new ArrayList<Integer>();
@@ -48,10 +49,10 @@ public class MethodPractice {
 		return oddNumber;
 	}
 
-	/** 4.Write a method that take input as mile & return as kilometer.
-	 *  Input/ Parameter: double number
-	 *   return type:double
-	 *    serving Bucket/container:variable
+	/**
+	 * 4.Write a method that take input as mile & return as kilometer. Input/
+	 * Parameter: double number return type:double serving
+	 * Bucket/container:variable
 	 */
 	public static double getKilometer(double number) {
 		double asKilometer = 0;
@@ -60,7 +61,8 @@ public class MethodPractice {
 		return asKilometer;
 	}
 
-	// 5. Write a Method that take one String input and return same string in upper case.
+	// 5. Write a Method that take one String input and return same string in
+	// upper case.
 
 	public static String getStringUpperCase(String text) {
 		String upperCase = null;
@@ -69,7 +71,8 @@ public class MethodPractice {
 		return upperCase;
 	}
 
-	// 6. Write a method that take one String input and return Same String in lower case.
+	// 6. Write a method that take one String input and return Same String in
+	// lower case.
 
 	public static String getStringLowerCase(String text) {
 		String lowerCase = null;
@@ -78,7 +81,8 @@ public class MethodPractice {
 		return lowerCase;
 	}
 
-	// 7. Write a method that take one String input and return a list off all index.
+	// 7. Write a method that take one String input and return a list off all
+	// index.
 
 	public static ArrayList<Integer> getIndex(String text) {
 		ArrayList<Integer> allIndex = new ArrayList<Integer>();
@@ -89,7 +93,8 @@ public class MethodPractice {
 		return allIndex;
 	}
 
-	// 8. Write a method that take one String input and return a list of all character
+	// 8. Write a method that take one String input and return a list of all
+	// character
 
 	public static ArrayList<Character> getCharacterList(String text) {
 		ArrayList<Character> allCharacter = new ArrayList<Character>();
@@ -100,7 +105,8 @@ public class MethodPractice {
 		return allCharacter;
 	}
 
-	// 9.Write a method that take one number input and return the sum of 1 to that given number.
+	// 9.Write a method that take one number input and return the sum of 1 to
+	// that given number.
 
 	public static int getSum(int number) {
 		int total = 0;
@@ -109,7 +115,8 @@ public class MethodPractice {
 		}
 		return total;
 	}
-	// 10 Write a method that take one number input and return square of the given number
+	// 10 Write a method that take one number input and return square of the
+	// given number
 
 	public static int getSquareNumber(int number) {
 		int squareTotal = 0;
@@ -156,31 +163,34 @@ public class MethodPractice {
 		return result;
 
 	}
-	// 14.1.Write a method that take one number Array input and return the max number.
-	
-		public static int getMaxNumber(int[] numberArray){
-		int maximumNumber =0;
-			Arrays.sort(numberArray);
-			maximumNumber= numberArray[numberArray.length-1];
-			
-			return maximumNumber;
-		}
+	// 14.1.Write a method that take one number Array input and return the max
+	// number.
+
+	public static int getMaxNumber(int[] numberArray) {
+		int maximumNumber = 0;
+		Arrays.sort(numberArray);
+		maximumNumber = numberArray[numberArray.length - 1];
+
+		return maximumNumber;
+	}
 
 	// 14.2 write a method that take one number array input and return the max
-		// number.
+	// number.
 
-		public static int getMaxNumberTwo(int[] numArray1) {
-			int maxNumber = numArray1[0];
-			for (int i = 0; i < numArray1.length; i++) {
-				if (maxNumber < numArray1[i]) {
-					maxNumber = numArray1[i];
-				}
+	public static int getMaxNumberTwo(int[] numArray1) {
+		int maxNumber = numArray1[0];
+		for (int i = 0; i < numArray1.length; i++) {
+			if (maxNumber < numArray1[i]) {
+				maxNumber = numArray1[i];
 			}
-
-			return maxNumber;
 		}
-	/**15.1 Write a method that take one number Array input and return the min number.
-	  *Input parameter : int []numAraay ReturnType : int serving
+
+		return maxNumber;
+	}
+
+	/**
+	 * 15.1 Write a method that take one number Array input and return the min
+	 * number. Input parameter : int []numAraay ReturnType : int serving
 	 * Bucket/container : variable
 	 */
 	public static int getMinNumber(int[] numArrayTwo) {
@@ -190,8 +200,10 @@ public class MethodPractice {
 		return minimumNumber;
 
 	}
-	/**15.2. 15, Write a method that take one number Array input and return the min number.
-	 * Input parameter : int []numAraay ReturnType : int serving
+
+	/**
+	 * 15.2. 15, Write a method that take one number Array input and return the
+	 * min number. Input parameter : int []numAraay ReturnType : int serving
 	 * Bucket/container : variable
 	 */
 
@@ -205,97 +217,121 @@ public class MethodPractice {
 
 		return minimumNumber;
 	}
-	
-	/** 16.Write a Method that take a number input and return the same value as a String
-	 * Input/ parameter: int number
-	 * return type:String
-	 * Serving Bucket: 
+
+	/**
+	 * 16.Write a Method that take a number input and return the same value as a
+	 * String Input/ parameter: int number return type:String Serving Bucket:
 	 */
-	
-	public static String getStringFromInteger(int number){
-		String convertedNumber= null;
-		convertedNumber= String.valueOf(number);
-		
+
+	public static String getStringFromInteger(int number) {
+		String convertedNumber = null;
+		convertedNumber = String.valueOf(number);
+
 		return convertedNumber;
 	}
-	/**17. Write a method that take a string representation of number input and
+
+	/**
+	 * 17. Write a method that take a string representation of number input and
 	 * return the same value as an integer.
-	 * Input/ parameter: String name
-	 * Return Type : int.
-	 * serving Bucket: Variable
+	 *  Input/ parameter: String name 
+	 *  Return Type : int.
+	 *  serving Bucket: Variable
 	 * 
 	 */
-	public static int getIntegerFromString(String name){
+	public static int getIntegerFromString(String name) {
 		int rollNumber = 0;
 		rollNumber = Integer.valueOf(name);
-		
+
 		return rollNumber;
 	}
-	
-	/** 18, Write a method that take String input & return true if it contains
-	 * char 'a" otherwise return false.
+
+	/**
+	 * 18, Write a method that take String input & return true if it contains
+	 * char 'a" otherwise return false. 
 	 * Input/ parameter:String text 
 	 * Return type :boolean 
 	 * serving bucket variable
 	 */
-	
-	public static boolean getDecision(String text){
+
+	public static boolean getDecision(String text) {
 		boolean decision = false;
-		for(int i=0;i<text.length();i++){
-			if(text.charAt(i)=='a'|| text.charAt(i)=='A'){
+		for (int i = 0; i < text.length(); i++) {
+			if (text.charAt(i) == 'a' || text.charAt(i) == 'A') {
 				decision = true;
 			}
 		}
-		
+
 		return decision;
 	}
-	
-	/**19.write a method that take a one String input and return the sum of all index. 
+
+	/**
+	 * 19.write a method that take a one String input and return the sum of all index. 
 	 * Input/ parameter: String text 
 	 * Return type: int 
 	 * Serving bucket :Variable
 	 */
-	public static int getSumOfAllindex(String text){
-		int indexTotal=0;
-		for(int i=0; i<text.length();i++){
-			indexTotal= indexTotal+i;
+	public static int getSumOfAllindex(String text) {
+		int indexTotal = 0;
+		for (int i = 0; i < text.length(); i++) {
+			indexTotal = indexTotal + i;
 		}
-		
+
 		return indexTotal;
 	}
-	/** 20, Write a method that take one string input and return a list of last five character. 
+
+	/**
+	 * 20, Write a method that take one string input and return a list of last five character. 
 	 * Input/parameter: String name;
-	 * Return type: Arraylist<Character>;
-	 * Serving bucket: list
+	 *  Return type: Arraylist
+	 * <Character>; Serving bucket: list
 	 */
-	public static ArrayList<Character> getCharacterListLast(String text){
-		ArrayList<Character>lastFiveCharacter = new ArrayList<Character>();
-		for(int i=text.length()-5; i<text.length();i++){
+	public static ArrayList<Character> getCharacterListLast(String text) {
+		ArrayList<Character> lastFiveCharacter = new ArrayList<Character>();
+		for (int i = text.length() - 5; i < text.length(); i++) {
 			lastFiveCharacter.add(text.charAt(i));
 		}
-		
+
 		return lastFiveCharacter;
 	}
-	/** 21.Write a method that take one String input and return a list first five character.
-	 *  Input/ Parameter  : String name 
-	 *  Return/output Type: ArrayList <Character> 
-	 *  Serving bucket    : List
+
+	/**
+	 * 21.Write a method that take one String input and return a list first five character. 
+	 * Input/ Parameter : String name 
+	 * Return/output Type: ArrayList
+	 * <Character> Serving bucket : List
 	 */
-	public static ArrayList<Character> getFirstFiveCharacter(String text){
+	public static ArrayList<Character> getFirstFiveCharacter(String text) {
 		ArrayList<Character> firstFiveCharacter = new ArrayList<Character>();
-		for(int i=0; i<5;i++){
+		for (int i = 0; i < 5; i++) {
 			firstFiveCharacter.add(text.charAt(i));
 		}
-		
+
 		return firstFiveCharacter;
 	}
-	
+
+	/**
+	 * 22.Write a method that take one String input and return fifth to tenth
+	 * character as a String 
+	 * Input/ parameter: String Text
+	 *  Return type: String
+	 * Serving bucket: variable
+	 */
+	public static String getFifthToTenth(String text) {
+		String fifthToTenthCharacter = "";
+		for (int i = 4; i < 10; i++) {
+		fifthToTenthCharacter = fifthToTenthCharacter + String.valueOf(text.charAt(i));
+		}
+
+		return fifthToTenthCharacter;
+	}
+
 	public static void main(String[] args) {
-		System.out.println(getFirstFiveCharacter("This is a String"));
-		System.out.println("Ans.-20.) "+getCharacterListLast("This is a String"));
-		System.out.println("Ans.-19.) "+getSumOfAllindex("This is a String"));
-		System.out.println("Ans.-18.) "+getDecision("This is a String"));
-		System.out.println("Ans.-17.) "+getIntegerFromString("30"));
+		System.out.println("Ans.-22.) " + getFifthToTenth("This is a String"));
+		System.out.println("Ans.-21.) " + getFirstFiveCharacter("This is a String"));
+		System.out.println("Ans.-20.) " + getCharacterListLast("This is a String"));
+		System.out.println("Ans.-19.) " + getSumOfAllindex("This is a String"));
+		System.out.println("Ans.-18.) " + getDecision("This is a String"));
+		System.out.println("Ans.-17.) " + getIntegerFromString("30"));
 		System.out.println("Ans.-16.) " + getStringFromInteger(20));
 		int[] numArray2 = { 18, 40, -50, 70, 3 };
 		System.out.println("Ans.-15.2)" + getMinNumber2(numArray2));
@@ -303,7 +339,7 @@ public class MethodPractice {
 		System.out.println("Ans.-15.1)" + getMinNumber(numArray));
 		int[] numArray1 = { 18, 17, 39, 38, 35 };
 		System.out.println("Ans.-14.2)" + getMaxNumberTwo(numArray1));
-		int[]numberArray = {10,12,15,38,20};
+		int[] numberArray = { 10, 12, 15, 38, 20 };
 		System.out.println("Ans.-14.1) " + getMaxNumber(numberArray));
 		System.out.println("Ans.-13.) " + getName(20));
 		System.out.println("Ans.-12.) " + getNumberList(10));
