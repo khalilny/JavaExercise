@@ -441,8 +441,28 @@ public class MethodPractice {
 		
 	return consonantCount;
 	}
+	/** 28.1. Write a method that take one String input & return the count of all vowels .
+	 * input parameter: String Text 
+	 * Return Type : int 
+	 * Serving bucket : variable
+	 */
+
+	public static int getVowelCount(String text) {
+		int count = 0;
+		String newText = text.toLowerCase();
+		for (int i = 0; i < newText.length(); i++) {
+			char ch = newText.charAt(i);
+			if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+				count++;
+			}
+		}
+	
+		return count;
+		}
+	
 	
 	public static void main(String[] args) {
+		System.out.println("Ans.28.1) " +getVowelCount("This is a String"));
 		System.out.println("Ans.27.2) " +getCount("This is a String"));
 		System.out.println("Ans.27.1) " +getConsonantCount("This is a String"));
 		System.out.println("Ans.-26.) " +getWordCount("This is a String", "is"));
