@@ -423,7 +423,7 @@ public class MethodPractice {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Ans.-27.) " +getConsonantCount("This is a String"));
+		System.out.println("Ans.-27.1)" +getConsonantCount("This is a String"));
 		System.out.println("Ans.-26.) " +getWordCount("This is a String", "is"));
 		System.out.println("Ans.-25.) " + getResult("This is a String","is"));
 		System.out.println("Ans.-24.2)" + getLastWord("This is a String"));
