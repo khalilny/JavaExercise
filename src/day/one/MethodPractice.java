@@ -382,11 +382,30 @@ public class MethodPractice {
 		}
 		return result;
 	}
+	/**
+	 * 26. Write a method that take one String & one word input and return the
+	 * count of that given word.
+	 * Input/parameter:String textTwo, String word
+	 * Return type: int 
+	 * Serving bucket: Variable
+	 */
+	public static int getWordCount(String text, String word){
+		int wordCount = 0;
+		String[] wordArray = text.split(" ");
+		for(int i=0;i<wordArray.length;i++){
+			if(wordArray[i].equalsIgnoreCase(word)){
+				wordCount= wordCount+1;
+			}
+		}
+		
+		return wordCount;
+	}  
 	
 	public static void main(String[] args) {
+		System.out.println("Ans.-26.) " +getWordCount("This is a String", "is"));
 		System.out.println("Ans.-25.) " + getResult("This is a String","is"));
-		System.out.println("Ans.-24.2) "+ getLastWord("This is a String"));
-		System.out.println("Ans.-24.1) "+ getFirstWord("This is a String"));
+		System.out.println("Ans.-24.2)" + getLastWord("This is a String"));
+		System.out.println("Ans.-24.1)" + getFirstWord("This is a String"));
 		System.out.println("Ans.-23.) " + getWordList("This is a String"));
 		System.out.println("Ans.-22.) " + getFifthToTenth("This is a String"));
 		System.out.println("Ans.-21.) " + getFirstFiveCharacter("This is a String"));
