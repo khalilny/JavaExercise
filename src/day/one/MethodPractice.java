@@ -400,8 +400,30 @@ public class MethodPractice {
 		
 		return wordCount;
 	}  
+	/** 27.1 Write a method that take one string input & return the count of all
+	 * consonant
+	 * Input parameter : String text
+	 * Return type: int 
+	 * Serving bucket:variable
+	 */
+	public static int getConsonantCount(String text){
+	int count = 0;	
+	String newText = text.toLowerCase();
+	for(int i=0; i<newText.length();i++){
+		char ch = newText.charAt(i);
+		if (ch == 'b' || ch == 'c' || ch == 'd' || ch == 'f' || ch == 'g' || ch == 'h' || ch == 'j' || ch == 'k'
+				|| ch == 'l' || ch == 'm' || ch == 'n' || ch == 'p' || ch == 'q' || ch == 'r' || ch == 's'
+				|| ch == 't' || ch == 'v' || ch == 'w' || ch == 'x' || ch == 'y' || ch == 'z') {
+
+			count++;
+		}
+	}
+		
+		return count;
+	}
 	
 	public static void main(String[] args) {
+		System.out.println("Ans.-27.) " +getConsonantCount("This is a String"));
 		System.out.println("Ans.-26.) " +getWordCount("This is a String", "is"));
 		System.out.println("Ans.-25.) " + getResult("This is a String","is"));
 		System.out.println("Ans.-24.2)" + getLastWord("This is a String"));
