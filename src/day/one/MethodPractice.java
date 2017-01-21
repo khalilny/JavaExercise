@@ -421,9 +421,30 @@ public class MethodPractice {
 		
 		return count;
 	}
+	/** 27.2 Write a method that take one string input & return the count of all
+	 * consonant
+	 * Input parameter : String text
+	 * Return type: int 
+	 * Serving bucket:variable
+	 */
+	public static int getCount(String text){
+		int consonantCount = 0;	
+		String newText = text.toLowerCase();
+		String consonant = "bcdfghjklmnpqrstvwxyz";
+		for (int i = 0; i < newText.length(); i++) {
+			String ch = String.valueOf(newText.charAt(i));
+			if (consonant.contains(ch)) {
+				consonantCount++;
+
+			}
+		}
+		
+	return consonantCount;
+	}
 	
 	public static void main(String[] args) {
-		System.out.println("Ans.-27.1)" +getConsonantCount("This is a String"));
+		System.out.println("Ans.27.2) " +getCount("This is a String"));
+		System.out.println("Ans.27.1) " +getConsonantCount("This is a String"));
 		System.out.println("Ans.-26.) " +getWordCount("This is a String", "is"));
 		System.out.println("Ans.-25.) " + getResult("This is a String","is"));
 		System.out.println("Ans.-24.2)" + getLastWord("This is a String"));
