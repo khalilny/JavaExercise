@@ -461,7 +461,31 @@ public class MethodPractice {
 		}
 	
 	
+	/**28.2 way Write a method that take one String input & return the count of all vowels.
+	 * input parameter: String Text
+	 *  return Type : int 
+	 *  serving bucket : variable
+	 */
+
+	public static int getVowelCountFour(String text) {
+		int count = 0;
+		String newText = text.toLowerCase();
+		String vowel = "aeiou";
+		for (int i = 0; i < newText.length(); i++) {
+			String ch = String.valueOf(newText.charAt(i));
+			// System.out.println(vowel.contains(ch));
+			if (vowel.contains(ch)) {
+				count++;
+			}
+
+		}
+
+	return count;
+	
+	}
+	
 	public static void main(String[] args) {
+		System.out.println("Ans.28.2) " + getVowelCountFour("This is a String"));
 		System.out.println("Ans.28.1) " +getVowelCount("This is a String"));
 		System.out.println("Ans.27.2) " +getCount("This is a String"));
 		System.out.println("Ans.27.1) " +getConsonantCount("This is a String"));
