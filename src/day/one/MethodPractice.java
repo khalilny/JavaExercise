@@ -483,7 +483,26 @@ public class MethodPractice {
 	return count;
 	
 	}
-	
+	/**29.1. Wrire a method that take one String input and return the count of all upper case characters.
+		 * Input parameter:String text
+		 * Return type: int 
+		 * serving bucket :variable
+		 */
+
+		public static int getUpperCaseCharCount(String text) {
+			int upperCount = 0;
+			String upperCaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			for (int i = 0; i < text.length(); i++) {
+				String character = String.valueOf(text.charAt(i));
+				// System.out.println(upperCaseChar.contains(character));
+				if (upperCaseChar.contains(character)) {
+					upperCount++;
+				}
+			}
+
+			return upperCount;
+		}
+		
 	public static void main(String[] args) {
 		System.out.println("Ans.28.2) " + getVowelCountFour("This is a String"));
 		System.out.println("Ans.28.1) " +getVowelCount("This is a String"));
