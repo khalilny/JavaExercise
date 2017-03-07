@@ -488,7 +488,6 @@ public class MethodPractice {
 		 * Return type: int 
 		 * serving bucket :variable
 		 */
-
 		public static int getUpperCaseCharCount(String text) {
 			int upperCount = 0;
 			String upperCaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -519,8 +518,41 @@ public class MethodPractice {
 
 			return count;
 		}
+		/**29.3. Write a method that take one String input return the count of all lower case characters.
+		 * input parameter: String text 
+		 * return type:int 
+		 * serving bucket: variable
+		 */
+		public static int getCountLowerCase(String text){
+			int lowerCount = 0;
+			String lowerCaseChar = "abcdefghijklmnopqrstuvwxyz";
+			for(int i=0; i<text.length();i++){
+				String character = String.valueOf(text.charAt(i));
+				if(lowerCaseChar.contains(character)){
+					lowerCount++;
+				}
+				
+			}
+			return lowerCount;
+		}
+		/**29.4. Write a method that take one String input return the count of all lower case characters.
+		 * input parameter: String text 
+		 * return type:int 
+		 * serving bucket: variable
+		 */
+		public static int getLowerCaseCharCount(String text){
+			int lowerCaseCount = 0;
+			for(int i=0; i<text.length();i++){
+				if(Character.isLowerCase(text.charAt(i))){
+					lowerCaseCount++;
+				}		
+			}
+			
+			return lowerCaseCount;
+		}
 	public static void main(String[] args) {
-		
+		System.out.println("Ans.29.4) " + getLowerCaseCharCount ("This is a String"));
+		System.out.println("Ans.29.3) " + getCountLowerCase ("This is a String"));
 		System.out.println("Ans.29.2) " + getUpperCaseCharCountTwo("This is a String"));
 		System.out.println("Ans.29.1) " + getUpperCaseCharCount("This is a String"));
 		System.out.println("Ans.28.2) " + getVowelCountFour("This is a String"));
