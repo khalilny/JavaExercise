@@ -550,7 +550,23 @@ public class MethodPractice {
 			
 			return lowerCaseCount;
 		}
+		/**30. Write a method that take one String input & return the count of characters without whitespace.
+		 * input  parameter:(String text)
+		 * return type: int
+		 * serving Bucket: Variable
+		 */
+		public static int getCharacterCount(String text){
+			int charCount = 0;
+			for(int i=0; i<text.length();i++){
+		if(text.charAt(i)!=' '){
+			charCount++;
+		}
+			
+			}
+			return charCount;
+		}
 	public static void main(String[] args) {
+		System.out.println("Ans.30.0) " + getCharacterCount("This is a String"));
 		System.out.println("Ans.29.4) " + getLowerCaseCharCount ("This is a String"));
 		System.out.println("Ans.29.3) " + getCountLowerCase ("This is a String"));
 		System.out.println("Ans.29.2) " + getUpperCaseCharCountTwo("This is a String"));
