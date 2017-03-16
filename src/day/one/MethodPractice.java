@@ -565,17 +565,37 @@ public class MethodPractice {
 			}
 			return charCount;
 		}
+		/**31.Write a Method that take one string input & return all repeated characters without whitespace.
+		 * Input parameter:String text
+		 * Return Type:character
+		 * Serving Bucket:variable
+		 */
+		public static String getRepeatedCharacter(String text){
+			String repeatedChar = "";
+			String newText = text.toLowerCase().replaceAll(" ", "");
+			for(int i=0;i<text.length();i++){
+				for (int j = i + 1; j < newText.length(); j++) {
+					if (newText.charAt(i) == newText.charAt(j)) {
+				if (!repeatedChar.contains(String.valueOf(newText.charAt(i)))) {
+					repeatedChar = repeatedChar + newText.charAt(i);
+				}
+				}
+			}
+			}
+			return repeatedChar;
+		}
 	public static void main(String[] args) {
+		System.out.println("Ans.31.-) " + getRepeatedCharacter("This is a String"));
 		System.out.println("Ans.30.0) " + getCharacterCount("This is a String"));
 		System.out.println("Ans.29.4) " + getLowerCaseCharCount ("This is a String"));
 		System.out.println("Ans.29.3) " + getCountLowerCase ("This is a String"));
 		System.out.println("Ans.29.2) " + getUpperCaseCharCountTwo("This is a String"));
 		System.out.println("Ans.29.1) " + getUpperCaseCharCount("This is a String"));
 		System.out.println("Ans.28.2) " + getVowelCountFour("This is a String"));
-		System.out.println("Ans.28.1) " +getVowelCount("This is a String"));
-		System.out.println("Ans.27.2) " +getCount("This is a String"));
-		System.out.println("Ans.27.1) " +getConsonantCount("This is a String"));
-		System.out.println("Ans.-26.) " +getWordCount("This is a String", "is"));
+		System.out.println("Ans.28.1) " + getVowelCount("This is a String"));
+		System.out.println("Ans.27.2) " + getCount("This is a String"));
+		System.out.println("Ans.27.1) " + getConsonantCount("This is a String"));
+		System.out.println("Ans.-26.) " + getWordCount("This is a String", "is"));
 		System.out.println("Ans.-25.) " + getResult("This is a String","is"));
 		System.out.println("Ans.-24.2)" + getLastWord("This is a String"));
 		System.out.println("Ans.-24.1)" + getFirstWord("This is a String"));
